@@ -3,17 +3,17 @@
 
 #include "LinkedList.h"
 
-void PrintHeader();
+void printHeader();
 
 template <class T>
-void PrintList(LinkedList<T> list);
+void printList(LinkedList<T> list);
 
-void IntList();
+void intList();
 
-void FloatList();
+void floatList();
 
-void CharList();
+void charList();
 
-void PrintFooter();
+void printFooter();
 
 #endif /*LINKEDLISTSIMULATION_H*/
