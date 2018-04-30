@@ -28,6 +28,8 @@ void PrintList(LinkedList<T> linkedList) {
 		"Printing the linked list:" << endl;
 
 	linkedList.reverse_print();
+
+	linkedList.print();
 }
 
 void IntList() {
