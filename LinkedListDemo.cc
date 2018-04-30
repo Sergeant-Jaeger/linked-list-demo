@@ -27,7 +27,7 @@ void printList(LinkedList<T> linkedList) {
 	cout << endl <<
 		"Printing the linked list:" << endl;
 
-	linkedList.reverse_print();
+	linkedList.reversePrint();
 
 	linkedList.print();
 }
@@ -78,7 +78,7 @@ void charList() {
 	printList(charLL);
 }
 
-void PrintFooter() {
+void printFooter() {
 
 	cout << endl
 		<< "************Ending Linked List Demonstration************" << endl;
