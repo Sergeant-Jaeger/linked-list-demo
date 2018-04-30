@@ -2,68 +2,68 @@
 
 int main() {
 
-	PrintHeader();
+	printHeader();
 
-	IntList();
+	intList();
 
-	FloatList();
+	floatList();
 
-	CharList();
+	charList();
 
-	PrintFooter();
+	printFooter();
 
 	return 0;
 }
 
-void PrintHeader() {
+void printHeader() {
 
 	cout << "***********Starting Linked List Demonstration***********" << endl
 		<< endl;
 }
 
 template <class T>
-void PrintList(LinkedList<T> linkedList) {
+void printList(LinkedList<T> linkedList) {
 
 	cout << endl <<
 		"Printing the linked list:" << endl;
 
-	linkedList.reverse_print();
+	linkedList.reversePrint();
 
 	linkedList.print();
 }
 
-void IntList() {
+void intList() {
 
-	LinkedList<int> intList;
+	LinkedList<int> intLL;
 
 	cout << "Adding integers 1 through 5 to a linked list" << endl;
 
 	for (int i = 1; i <= 5; i++) {
 
-		intList.push(i);
+		intLL.push(i);
 	}
 
-	PrintList(intList);
+	printList(intLL);
 }
 
-void FloatList() {
+void floatList() {
 
-	LinkedList<float> floatList;
+	LinkedList<float> floatLL;
 
 	cout << endl
 		<< "Adding floats incrementing by fifths to a linked list" << endl;
 
 	for (int i = 1; i <= 5; i++) {
 
-		floatList.push(i / (float)5);
+		floatLL.push(i / (float)5);
 	}
 
-	PrintList(floatList);
+	printList(floatLL);
 }
 
-void CharList() {
+void charList() {
 
-	LinkedList<char> charList;
+	LinkedList<char> charLL;
 
 	cout << endl
 		<< "Adding \"Hello World\" to a linked list" << endl;
@@ -72,13 +72,13 @@ void CharList() {
 
 	for (unsigned int i = 0; i < sizeof(overusedProgrammerReference); i++) {
 
-		charList.push(overusedProgrammerReference[i]);
+		charLL.push(overusedProgrammerReference[i]);
 	}
 
-	PrintList(charList);
+	printList(charLL);
 }
 
-void PrintFooter() {
+void printFooter() {
 
 	cout << endl
 		<< "************Ending Linked List Demonstration************" << endl;
