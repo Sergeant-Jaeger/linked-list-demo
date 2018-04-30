@@ -35,12 +35,12 @@ class LinkedList {
 
 protected:
 	LinkedListNode<T>* head;
-	void reverse_print(const LinkedListNode<T>* node) const;
+	void reversePrint(const LinkedListNode<T>* node) const;
 	void print(const LinkedListNode<T>* node) const;
 	
 public:
 	LinkedList();
-	void reverse_print() const;
+	void reversePrint() const;
 	void print() const;
 	void push(T nData);
 };
@@ -53,7 +53,7 @@ LinkedList<T>::LinkedList() {
 }
 
 template <class T>
-void LinkedList<T>::reverse_print(const LinkedListNode<T>* node) const {
+void LinkedList<T>::reversePrint(const LinkedListNode<T>* node) const {
 
 	if (node != NULL) {
 
@@ -63,7 +63,7 @@ void LinkedList<T>::reverse_print(const LinkedListNode<T>* node) const {
 }
 
 template <class T>
-void LinkedList<T>::reverse_print() const {
+void LinkedList<T>::reversePrint() const {
 
 	cout << endl;
 	reverse_print(head);
