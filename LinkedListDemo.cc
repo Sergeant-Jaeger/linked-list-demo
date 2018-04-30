@@ -2,27 +2,27 @@
 
 int main() {
 
-	PrintHeader();
+	printHeader();
 
-	IntList();
+	intList();
 
-	FloatList();
+	floatList();
 
-	CharList();
+	charList();
 
-	PrintFooter();
+	printFooter();
 
 	return 0;
 }
 
-void PrintHeader() {
+void printHeader() {
 
 	cout << "***********Starting Linked List Demonstration***********" << endl
 		<< endl;
 }
 
 template <class T>
-void PrintList(LinkedList<T> linkedList) {
+void printList(LinkedList<T> linkedList) {
 
 	cout << endl <<
 		"Printing the linked list:" << endl;
@@ -32,7 +32,7 @@ void PrintList(LinkedList<T> linkedList) {
 	linkedList.print();
 }
 
-void IntList() {
+void intList() {
 
 	LinkedList<int> intList;
 
@@ -43,10 +43,10 @@ void IntList() {
 		intList.push(i);
 	}
 
-	PrintList(intList);
+	printList(intList);
 }
 
-void FloatList() {
+void floatList() {
 
 	LinkedList<float> floatList;
 
@@ -58,10 +58,10 @@ void FloatList() {
 		floatList.push(i / (float)5);
 	}
 
-	PrintList(floatList);
+	printList(floatList);
 }
 
-void CharList() {
+void charList() {
 
 	LinkedList<char> charList;
 
@@ -75,7 +75,7 @@ void CharList() {
 		charList.push(overusedProgrammerReference[i]);
 	}
 
-	PrintList(charList);
+	printList(charList);
 }
 
 void PrintFooter() {
