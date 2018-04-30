@@ -34,36 +34,36 @@ void printList(LinkedList<T> linkedList) {
 
 void intList() {
 
-	LinkedList<int> intList;
+	LinkedList<int> intLL;
 
 	cout << "Adding integers 1 through 5 to a linked list" << endl;
 
 	for (int i = 1; i <= 5; i++) {
 
-		intList.push(i);
+		intLL.push(i);
 	}
 
-	printList(intList);
+	printList(intLL);
 }
 
 void floatList() {
 
-	LinkedList<float> floatList;
+	LinkedList<float> floatLL;
 
 	cout << endl
 		<< "Adding floats incrementing by fifths to a linked list" << endl;
 
 	for (int i = 1; i <= 5; i++) {
 
-		floatList.push(i / (float)5);
+		floatLL.push(i / (float)5);
 	}
 
-	printList(floatList);
+	printList(floatLL);
 }
 
 void charList() {
 
-	LinkedList<char> charList;
+	LinkedList<char> charLL;
 
 	cout << endl
 		<< "Adding \"Hello World\" to a linked list" << endl;
@@ -72,10 +72,10 @@ void charList() {
 
 	for (unsigned int i = 0; i < sizeof(overusedProgrammerReference); i++) {
 
-		charList.push(overusedProgrammerReference[i]);
+		charLL.push(overusedProgrammerReference[i]);
 	}
 
-	printList(charList);
+	printList(charLL);
 }
 
 void PrintFooter() {
