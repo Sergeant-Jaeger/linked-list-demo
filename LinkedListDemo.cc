@@ -70,7 +70,7 @@ void charList() {
 
 	char overusedProgrammerReference[] = "Hello World";
 
-	for (unsigned int i = 0; i < sizeof(overusedProgrammerReference); i++) {
+	for (unsigned int i = 0; i < sizeof(overusedProgrammerReference) - 1; i++) {
 
 		charLL.push(overusedProgrammerReference[i]);
 	}

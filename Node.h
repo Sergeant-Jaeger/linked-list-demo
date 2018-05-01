@@ -1,20 +1,32 @@
+/*
+Author: Aaron Jaeger
+*/
+
 #ifndef NODE_H
 #define NODE_H
 
+/*
+Class: Node
+
+Parent: n/a
+
+Notes: This class is implemented with a template
+	for data flexibility. The class also uses a 
+	protected access modifier for inheritence 
+	purposes
+*/
 template <class T>
-class Node
-{
+class Node {
 
 protected:
+	
 	T data;
 
 public:
-	Node(T nData);
+	
+	Node(T nData) {
+
+		data = nData;
+	}
 };
-
-template <class T>
-Node<T>::Node(T nData) {
-
-	data = nData;
-}
 #endif /*NODE_H*/

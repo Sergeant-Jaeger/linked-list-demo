@@ -1,3 +1,7 @@
+/*
+Author: Aaron Jaeger
+*/
+
 #ifndef LINKEDLIST_H
 #define LINKEDLIST_H
 
@@ -7,99 +11,117 @@
 using std::cout;
 using std::endl;
 
-//forward declaration for LinkedList
+//forward declaration of LinkedList for friend
+//class declaration
 template <class T>
 class LinkedList;
 
-//LinkedListNode class definition
+/*
+Class: LinkedListNode
+
+Parent: Node
+
+Notes: This class is implemented with a template
+	for data flexibility. The class also declares
+	a friend class for direct access to private
+	datamembers
+*/
 template <class T>
-class LinkedListNode : public Node <T> {
+class LinkedListNode : public Node<T> {
+	
+	//declare LinkedList as a friend class to allow access
+	//to private datamembers
 	friend class LinkedList<T>;
 
 	LinkedListNode<T>* next;
 
 public:
-	LinkedListNode(T nData, LinkedListNode<T>* nNext);
+	
+	//LinkedListNode takes class T data in its constructor
+	//then feeds it to its parent's constructor
+	LinkedListNode(T nData, LinkedListNode<T>* nNext) : Node<T>(nData) {
+
+		next = nNext;
+	}
 };
 
-//LinkedListNode class implementation
-template <class T>
-LinkedListNode<T>::LinkedListNode(T nData, LinkedListNode<T>* nNext): Node<T>(nData) {
+/*
+Class: LinkedList
 
-	next = nNext;
-}
+Parent: n/a
 
-//LinkedList class definition
+Notes: This class is implemented with a template
+	for data flexibility.
+*/
 template <class T>
 class LinkedList {
 
-protected:
 	LinkedListNode<T>* head;
-	void reversePrint(const LinkedListNode<T>* node) const;
-	void print(const LinkedListNode<T>* node) const;
+
+	//reversePrint utilizes recursion to print the contents
+	//of the last node first.
+	void reversePrint(const LinkedListNode<T>* node) const {
+
+		if (node != nullptr) {
+
+			reversePrint(node->next);
+			cout << node->data << ' ';
+		}
+	}
 	
+	//print utilizes recrusion to print the contents of head
+	//first followed by subsequent nodes in the linked list
+	void print(const LinkedListNode<T>* node) const {
+		
+		if (node != nullptr) {
+
+			cout << node->data << ' ';
+			print(node->next);
+		}
+	}
+
 public:
-	LinkedList();
-	void reversePrint() const;
-	void print() const;
-	void push(T nData);
+	
+	LinkedList() {
+
+		head = nullptr;
+	}
+
+	//this reversePrint method makes a call to the private
+	//reversePrint method to ensure the first node passed is
+	//the head of the linked list
+	void reversePrint() const {
+
+		cout << endl;
+		reversePrint(head);
+		cout << endl;
+	}
+
+	//this print method makes a call to the private print
+	//method to ensure the first node passed is the head of
+	//the linked list
+	void print() const {
+
+		cout << endl;
+		print(head);
+		cout << endl;
+
+	}
+
+	//push inserts the class T data into a new node and that
+	//node is then inserted into the head position of the 
+	//linked list
+	void push(T nData) {
+
+		if (head == nullptr) {
+
+			head = new LinkedListNode<T>(nData, nullptr);
+		}
+		else {
+
+			LinkedListNode<T>* nNode = new LinkedListNode<T>(nData, head);
+			head = nNode;
+		}
+	}
 };
-
-//LinkedList class implementation
-template <class T>
-LinkedList<T>::LinkedList() {
-
-	head = NULL;
-}
-
-template <class T>
-void LinkedList<T>::reversePrint(const LinkedListNode<T>* node) const {
-
-	if (node != NULL) {
-
-		reversePrint(node->next);
-		cout << node->data << ' ';
-	}
-}
-
-template <class T>
-void LinkedList<T>::reversePrint() const {
-
-	cout << endl;
-	reversePrint(head);
-	cout << endl;
-}
-
-template <class T>
-void LinkedList<T>::print(const LinkedListNode<T>* node) const {
-
-	if (node != NULL) {
-
-		cout << node->data << ' ';
-		print(node->next);
-	}
-}
-
-template <class T>
-void LinkedList<T>::print() const {
-
-	cout << endl;
-	print(head);
-	cout << endl;
-
-}
-
-template <class T>
-void LinkedList<T>::push(T nData) {
-
-	if (head == NULL) {
-
-		head = new LinkedListNode<T>(nData, NULL);
-	}
-	else {
-
-		LinkedListNode<T>* nNode = new LinkedListNode<T>(nData, head);
-		head = nNode;
-	}
-}
 #endif /*LINKEDLIST_H*/
