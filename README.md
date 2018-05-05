@@ -96,4 +96,4 @@ Thanks to:
 
 * [PurpleBooth](https://github.com/PurpleBooth) for the great [README.md template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2#file-readme-template-md)
 
-* [Mad Physicist](https://stackoverflow.com/users/2988730/mad-physicist) for .gitignore help with [ignoring extension-less files](https://stackoverflow.com/questions/19023550/how-do-i-add-files-without-dots-in-them-all-extension-less-files-to-the-gitign)
+* [Hilton Lipschitz](https://hiltmon.com/about/) for the amazing [blog](https://hiltmon.com/blog/2013/07/03/a-simple-c-plus-plus-project-structure/) post on C++ file structures, .gitignore, and Makefiles
