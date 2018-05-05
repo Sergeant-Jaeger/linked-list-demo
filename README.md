@@ -8,11 +8,11 @@ Just pull the files into your linux directory and compile with the at least the 
 
 ### Prerequisites
 
-[//]: (What things you need to install the software and how to install them)
+[//]: # (What things you need to install the software and how to install them)
 
-[//]: (```)
-[//]: (Give examples)
-[//]: (```)
+[//]: # (```)
+[//]: # (Give examples)
+[//]: # (```)
 
 ### Installing
 
