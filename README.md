@@ -40,4 +40,4 @@ Thanks to:
 
 * [PurpleBooth](https://github.com/PurpleBooth) for the great README.md [template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2#file-readme-template-md).
 
-* [Hilton Lipschitz](https://hiltmon.com/about/) for the amazing [blog](https://hiltmon.com/blog/2013/07/03/a-simple-c-plus-plus-project-structure/) post on C++ file structures, .gitignore, and Makefiles.
+* [Hilton Lipschitz](https://hiltmon.com/about/) for the amazing [blog](https://hiltmon.com/blog/2013/07/03/a-simple-c-plus-plus-project-structure/) on C++ file structures, .gitignore, and Makefiles.
