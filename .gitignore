@@ -1,9 +1,6 @@
-#ignore files without extensions
+#ignore build and library directories
+build
+lib/*
 
-*
-!*/
-!*.*
-
-#ignore object files
-
-*.o
+#ignore executables
+bin/*
