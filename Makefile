@@ -1,6 +1,7 @@
 #executable names for flexibility
 EXE := LinkedListDemo
-#TEST := Test
+TEST := Test
+SPIKE := Ticket
 
 #compiler variable
 CC := g++
@@ -10,8 +11,9 @@ BINDIR := bin
 BUILDDIR := build
 INCLUDEDIR := include
 LIBDIR := lib
+SPIKEDIR := spike
 SRCDIR := src
-#TESTDIR := test
+TESTDIR := test
 
 #extension variables
 SRCEXT := cc
@@ -20,7 +22,6 @@ OBJEXT := o
 #files
 SOURCES := $(shell find $(SRCDIR) -type f -name *.$(SRCEXT))
 OBJECTS := $(patsubst $(SRCDIR)/%,$(BUILDDIR)/%,$(SOURCES:.$(SRCEXT)=.$(OBJEXT)))
-#OBJECTS := $(patsubst $(SRCDIR)/%,$(BUILDDIR)/%,$(SOURCES:.$(SRCEXT)=.o))
 
 INCLUDES := -I $(INCLUDEDIR)
 
@@ -32,7 +33,8 @@ CCFLAGS := -std=c++11 -g -Wall
 
 #targets
 TARGET := $(BINDIR)/$(EXE)
-#TESTTARGET $(BINDIR)/$(TEST)
+TESTTARGET := $(BINDIR)/$(TEST)
+SPIKETARGET := $(BINDIR)/$(SPIKE)
 
 $(TARGET): $(OBJECTS)
 	@echo "Linking..."
@@ -45,5 +47,13 @@ $(BUILDDIR)/%.$(OBJEXT): $(SRCDIR)/%.$(SRCEXT)
 clean:
 	@echo "Cleaning...";
 	@echo "rm -r $(BUILDDIR) $(TARGET)"; rm -r $(BUILDDIR) $(TARGET)
+
+test:
+	@echo "$(CC) $(CCFLAGS) $(TESTDIR)/$(TEST).$(SRCEXT) $(INCLUDES) $(LIB) -o $(TESTTARGET)";
+	$(CC) $(CCFLAGS) $(TESTDIR)/$(TEST).$(SRCEXT) $(INCLUDES) $(LIB) -o $(TESTTARGET)
+
+spike:
+	@echo "$(CC) $(CCFLAGS) $(SPIKEDIR)/$(SPIKE).$(SRCEXT) $(INCLUDES) $(LIB) -o $(SPIKETARGET)";
+	$(CC) $(CCFLAGS) $(SPIKEDIR)/$(SPIKE).$(SRCEXT) $(INCLUDES) $(LIB) -o $(SPIKETARGET)
 
 .PHONY: clean
