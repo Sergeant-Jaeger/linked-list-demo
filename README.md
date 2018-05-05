@@ -10,7 +10,7 @@ This demo creates three classes: Node, LinkedListNode, and LinkedList. LinkedLis
 
 Just pull the files into your linux directory and compile with the at least the c++11 standard library.
 
-### Prerequisites
+[//]: # "### Prerequisites"
 
 [//]: # "What things you need to install the software and how to install them"
 
@@ -18,7 +18,7 @@ Just pull the files into your linux directory and compile with the at least the 
 [//]: # "Give examples"
 [//]: # "```"
 
-### Installing
+[//]: # "### Installing"
 
 [//]: # "A step by step series of examples that tell you have to get a development env running"
 
@@ -36,11 +36,11 @@ Just pull the files into your linux directory and compile with the at least the 
 
 [//]: # "End with an example of getting some data out of the system or using it for a little demo"
 
-## Running the tests
+[//]: # "## Running the tests"
 
 [//]: # "Explain how to run the automated tests for this system"
 
-### Break down into end to end tests
+[//]: # "### Break down into end to end tests"
 
 [//]: # "Explain what these tests test and why"
 
@@ -48,7 +48,7 @@ Just pull the files into your linux directory and compile with the at least the 
 [//]: # "Give an example"
 [//]: # "```"
 
-### And coding style tests
+[//]: # "### And coding style tests"
 
 [//]: # "Explain what these tests test and why"
 
@@ -56,21 +56,21 @@ Just pull the files into your linux directory and compile with the at least the 
 [//]: # "Give an example"
 [//]: # "```"
 
-## Deployment
+[//]: # "## Deployment"
 
 [//]: # "Add additional notes about how to deploy this on a live system"
 
-## Built With
+[//]: # "## Built With"
 
 [//]: # "* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used"
 [//]: # "* [Maven](https://maven.apache.org/) - Dependency Management"
 [//]: # "* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds"
 
-## Contributing
+[//]: # "## Contributing"
 
 [//]: # "Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us."
 
-## Versioning
+[//]: # "## Versioning"
 
 [//]: # "We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags)."
 
@@ -82,7 +82,7 @@ Just pull the files into your linux directory and compile with the at least the 
 
 * **Aaron Jaeger** - [Sergeant-Jaeger](https://github.com/Sergeant-Jaeger)
 
-## License
+[//]: # "## License"
 
 [//]: # "This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details"
 
@@ -92,4 +92,8 @@ Just pull the files into your linux directory and compile with the at least the 
 [//]: # "* Inspiration"
 [//]: # "* etc"
 
-* Thanks to [PurpleBooth](https://github.com/PurpleBooth) for the great [README.md template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2#file-readme-template-md)
+Thanks to: 
+
+* [PurpleBooth](https://github.com/PurpleBooth) for the great [README.md template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2#file-readme-template-md)
+
+* [Mad Physicist](https://stackoverflow.com/users/2988730/mad-physicist) for .gitignore help with [ignoring extension-less files](https://stackoverflow.com/questions/19023550/how-do-i-add-files-without-dots-in-them-all-extension-less-files-to-the-gitign)

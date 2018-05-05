@@ -1,24 +1,8 @@
-###########################################
-#IGNORE FILES WITHOUT EXTENSIONS
-#
-#THANKS TO Mad Physicist FROM STACKOVERFLOW
-###########################################
-
-#ignore everything
+#ignore files without extensions
 
 *
-
-#unignore anything that is a directory
-
 !*/
-
-#unignore all files with extensions
-
 !*.*
-
-###########################################
-#IGNORE THESE EXTENSIONS
-###########################################
 
 #ignore object files
 
