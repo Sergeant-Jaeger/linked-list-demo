@@ -20,15 +20,11 @@ Aaron@DESKTOP:~/linked_list_demo/bin$ ./LinkedListDemo
 
 You'll need:
 
-    * g++/gcc
+* g++/gcc
 
-    * make
+* make
 
-    * c++11 Standard Library (minimum)
-
-[//]: # "## Contributing"
-
-[//]: # "Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us."
+* c++11 Standard Library (minimum)
 
 ## Author
 
@@ -42,6 +38,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 Thanks to: 
 
-* [PurpleBooth](https://github.com/PurpleBooth) for the great [README.md template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2#file-readme-template-md)
+* [PurpleBooth](https://github.com/PurpleBooth) for the great README.md [template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2#file-readme-template-md).
 
-* [Hilton Lipschitz](https://hiltmon.com/about/) for the amazing [blog](https://hiltmon.com/blog/2013/07/03/a-simple-c-plus-plus-project-structure/) post on C++ file structures, .gitignore, and Makefiles
+* [Hilton Lipschitz](https://hiltmon.com/about/) for the amazing [blog](https://hiltmon.com/blog/2013/07/03/a-simple-c-plus-plus-project-structure/) post on C++ file structures, .gitignore, and Makefiles.
