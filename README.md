@@ -62,9 +62,9 @@ Just pull the files into your linux directory and compile with the at least the 
 
 ## Built With
 
-[//]: # (* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used)
-[//]: # (* [Maven](https://maven.apache.org/) - Dependency Management)
-[//]: # (* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds)
+[//]: # "* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used"
+[//]: # "* [Maven](https://maven.apache.org/) - Dependency Management"
+[//]: # "* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds"
 
 ## Contributing
 
